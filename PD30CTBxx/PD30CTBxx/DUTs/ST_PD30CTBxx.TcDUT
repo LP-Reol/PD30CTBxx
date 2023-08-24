@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_PD30CTBxx" Id="{27ed293a-92a7-4515-813b-eaa375b87521}">
+    <Declaration><![CDATA[
+TYPE ST_PD30CTBxx :
+STRUCT
+	bAnalogueValue				AT%I* : UINT;
+	bSwitchingSignalChannel_1	AT%I* : BIT;
+	bSwitchingSignalChannel_2	AT%I* : BIT;
+	bDustAlarm_1				AT%I* : BIT;
+	bDustAlarm_2				AT%I* : BIT;
+	bTemperatureAlarm			AT%I* : BIT;
+	bShortCircuit				AT%I* : BIT;
+	bSwitchingOutput_1			AT%I* : BIT;
+	bSwitchingOutput_2			AT%I* : BIT;
+	bApplicationFunctionOutput	AT%I* : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
