@@ -16,18 +16,58 @@
     <Implicit_KindOfTask>{08954eba-66c5-475e-9a0f-55fdcf37c898}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{a73d9e20-abf1-4649-bb8e-ece00f45ac27}</Implicit_Jitter_Distribution>
     <LibraryReferences>{09224d0d-7d65-404a-b8d9-8a6f7dbb075b}</LibraryReferences>
+    <Company>iMusic AS</Company>
+    <Released>false</Released>
+    <Title>PD30CTBxx</Title>
+    <ProjectVersion>0.0.1.0</ProjectVersion>
+    <LibraryCategories>
+      <LibraryCategory>
+        <Id>{1ae6d400-55f5-48a0-9fa9-d6a1ce9670ee}</Id>
+        <Version>0.0.1.0</Version>
+        <DefaultName>iMusic</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory>
+        <Id>{6644bf89-c751-404a-8e1d-95824bdbb3a5}</Id>
+        <Version>0.0.1.0</Version>
+        <ParentCategory>
+          <Id>{1ae6d400-55f5-48a0-9fa9-d6a1ce9670ee}</Id>
+        </ParentCategory>
+        <DefaultName>LPReol</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory>
+        <Id>{2a7c4a0c-5932-443a-9c0d-07152dbc8fe6}</Id>
+        <Version>0.0.1.0</Version>
+        <ParentCategory>
+          <Id>{1ae6d400-55f5-48a0-9fa9-d6a1ce9670ee}</Id>
+        </ParentCategory>
+        <DefaultName>Carlo Gavazzi</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id>{2a7c4a0c-5932-443a-9c0d-07152dbc8fe6}</Id>
+    </SelectedLibraryCategories>
+    <DefaultNamespace>PD30CTBxx</DefaultNamespace>
+    <Author>Jakob Bak</Author>
+    <Description>TwinCAT Library for PD30CTB* series Diffuse-reflective Photoelectric Sensors from Carlo Gavazzi</Description>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DUTs\ST_PD30CTBxx.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
+    <Folder Include="Version" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
   </ItemGroup>
