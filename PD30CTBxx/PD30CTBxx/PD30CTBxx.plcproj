@@ -17,7 +17,7 @@
     <Implicit_Jitter_Distribution>{a73d9e20-abf1-4649-bb8e-ece00f45ac27}</Implicit_Jitter_Distribution>
     <LibraryReferences>{09224d0d-7d65-404a-b8d9-8a6f7dbb075b}</LibraryReferences>
     <Company>iMusic AS</Company>
-    <Released>false</Released>
+    <Released>true</Released>
     <Title>PD30CTBxx</Title>
     <ProjectVersion>0.0.1.0</ProjectVersion>
     <LibraryCategories>
